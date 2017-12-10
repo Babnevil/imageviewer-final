@@ -1,0 +1,10 @@
+#BlueJ class context
+comment0.target=RedTint
+comment0.text=\r\n\ A\ very\ basic\ filter\ that\ increases\ the\ red\ rgb\ level\ of\ all\ the\ \r\n\ pixels\ of\ an\ image,\ giving\ a\ red\ tint\r\n\r\n\ @author\ Matthew\ Schilling\r\n\ @version\ 12.10.2017\r\n
+comment1.params=name
+comment1.target=RedTint(java.lang.String)
+comment1.text=\r\n\ Constructor\ for\ objects\ of\ class\ RedTint\r\n\ @param\ name\ The\ name\ of\ the\ filter\r\n
+comment2.params=image
+comment2.target=void\ apply(OFImage)
+comment2.text=\r\n\ apply\ this\ filter\ to\ the\ displayed\ image\r\n\ @param\ image\ The\ image\ we\ are\ currently\ working\ with\r\n
+numComments=3
