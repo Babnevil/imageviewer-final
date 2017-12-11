@@ -48,7 +48,6 @@ public class Scramble extends Filter
                 image.setPixel(x, y, stamp1);
                 image.setPixel(x+1, y, stamp2);
                 image.setPixel(x+2, y, stamp3);
-                //image.setPixel(x, y, image.getPixel((roll.nextInt(width)), (roll.nextInt(height))));
             }
         }
     }
