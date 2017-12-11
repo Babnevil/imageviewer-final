@@ -7,11 +7,9 @@ import java.awt.Color;
  */
 public class Frame extends Filter
 {
-    // instance variables - replace the example below with your own
-    private int x;
-
     /**
      * Constructor for objects of class Frame
+     * @param name The name of the filter
      */
     public Frame(String name)
     {
@@ -20,7 +18,7 @@ public class Frame extends Filter
 
     /**
      * Apply the filter to the current image
-     * Used similar execution 
+     * Used similar execution of the box ball project to draw the lines
      *
      * @param image The image we are currently viewing/working with
      */

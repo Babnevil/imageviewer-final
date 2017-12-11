@@ -17,11 +17,12 @@ public class RedTint extends Filter
     {
         super(name);
     }
+
     /**
      * apply this filter to the displayed image
      * @param image The image we are currently working with
      */
-public void apply(OFImage image)
+    public void apply(OFImage image)
     {
         int height = image.getHeight();
         int width = image.getWidth();
@@ -34,8 +35,8 @@ public void apply(OFImage image)
                 //check to make sure we wont try to bring the level out of bounds
                 if (redLevel<200){
                     redLevel +=45;
-                image.setPixel(x, y, new Color(redLevel, greenLevel, blueLevel));
-            }
+                    image.setPixel(x, y, new Color(redLevel, greenLevel, blueLevel));
+                }
             }
         }
     }

@@ -1,6 +1,6 @@
 import java.awt.Color;
 /**
- * This filter causes the left side of the image to be displayed on both
+ * This filter causes the right half of the image to be displayed on both
  * sides of the picture.
  *
  * @author Matthew Schilling
@@ -11,6 +11,7 @@ public class SplitMirror extends Filter
 
     /**
      * Constructor for objects of class SplitMirror
+     * @param name The name of the filter
      */
     public SplitMirror(String name)
     {
@@ -31,7 +32,6 @@ public class SplitMirror extends Filter
             for(int x = 0; x < width / 2; x++) {
                 Color left = image.getPixel(x, y);
                 image.setPixel(x, y, image.getPixel(width - 1 - x, y));
-                //image.setPixel(width - 1 - x, y, left);
             }
         }
     }

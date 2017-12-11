@@ -9,12 +9,14 @@ import java.util.Random;
  */
 public class Scramble extends Filter
 {
-
+    /**
+     * Constructor for objects of class Scramble.
+     * @param name The name of the filter.
+     */
     public Scramble(String name)
     {
         super(name);
     }
-
 
     /**
      * Apply this filter to an image.
@@ -34,15 +36,15 @@ public class Scramble extends Filter
         Color stamp1 = Color.BLACK;
         Color stamp2 = Color.BLACK;
         Color stamp3 = Color.BLACK;
-        
+
         for(int y = 0; y < height; y++) {
             for(int x = 0; x < width; x+=10) {
                 if(x +6 <= width){
-                stamp1 = image.getPixel(x+4, y);
-                stamp2 = image.getPixel(x+5, y);
-                stamp3 = image.getPixel(x+6, y);
-            }
-                
+                    stamp1 = image.getPixel(x+4, y);
+                    stamp2 = image.getPixel(x+5, y);
+                    stamp3 = image.getPixel(x+6, y);
+                }
+
                 image.setPixel(x, y, stamp1);
                 image.setPixel(x+1, y, stamp2);
                 image.setPixel(x+2, y, stamp3);
