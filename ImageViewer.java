@@ -14,10 +14,15 @@ import java.util.Iterator;
  * ImageViewer is the main class of the image viewer application. It builds and
  * displays the application GUI and initialises all other components.
  * 
+ * Updated with menu options for new filters
+ * 
  * To start the application, create an object of this class.
  * 
  * @author Michael Kölling and David J. Barnes.
  * @version 3.1
+ * 
+ * @author Matthew Schilling
+ * @version 12.11.2017
  */
 public class ImageViewer
 {
@@ -257,6 +262,8 @@ public class ImageViewer
         filterList.add(new FishEyeFilter("Fish Eye"));
         filterList.add(new RedTint("Red Tint"));
         filterList.add(new Scramble("Scramble"));
+        filterList.add(new SplitMirror("Split Mirror"));
+        filterList.add(new Frame("Frame"));
        
         return filterList;
     }
